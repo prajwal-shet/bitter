@@ -18,7 +18,7 @@ function Home() {
       }
       else{
         axios
-        .get("http://localhost:3001/posts", {
+        .get("https://bitter-eight.vercel.app/posts", {
           headers: { accessToken: localStorage.getItem("accessToken") },
         })
         .then((response) => {
