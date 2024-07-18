@@ -11,7 +11,7 @@ function Login() {
 
   const login = () => {
     const data = { username: username, password: password };
-    axios.post("https://bitter-eight.vercel.app/auth/login", data).then((response) => {
+    axios.post("https://bitter-backend-production.up.railway.app/auth/login", data).then((response) => {
       if (response.data.error) {
         alert(response.data.error);
       } else {
