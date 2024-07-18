@@ -15,7 +15,7 @@ function Registration() {
   });
 
   const onSubmit = (data) => {
-    axios.post("https://bitter-eight.vercel.app/auth", data).then((response) => {
+    axios.post("https://bitter-backend-production.up.railway.app/auth", data).then((response) => {
         if(response.data.error)
             {
                 alert("user already exists")
