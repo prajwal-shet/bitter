@@ -13,7 +13,7 @@ function Post() {
   let navigate=useNavigate()
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/posts/byId/${id}`).then((response) => {
+    axios.get(`https://bitter-backend-production.up.railway.app/posts/byId/${id}`).then((response) => {
       setPostObject(response.data);
     });
 
