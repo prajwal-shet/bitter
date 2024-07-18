@@ -18,7 +18,7 @@ function Home() {
       }
       else{
         axios
-        .get("https://bitter-eight.vercel.app/posts", {
+        .get("https://bitter-backend-production.up.railway.app/posts", {
           headers: { accessToken: localStorage.getItem("accessToken") },
         })
         .then((response) => {
